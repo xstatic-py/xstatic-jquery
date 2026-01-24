@@ -11,7 +11,7 @@ NAME = __name__.split('.')[-1] # package name (e.g. 'foo' or 'foo_bar')
                                # please use a all-lowercase valid python
                                # package name
 
-VERSION = '3.5.1' # version of the packaged files, please use the upstream
+VERSION = '3.7.1' # version of the packaged files, please use the upstream
                   # version number
 BUILD = '0' # our package build number, so we can release new builds
              # with fixes for xstatic stuff.
@@ -59,12 +59,6 @@ LOCATIONS = {
         'jquery.min.js': 'https://code.jquery.com/jquery-%s.min.js' % VERSION,
         'jquery.slim.js': 'https://code.jquery.com/jquery-%s.slim.js' % VERSION,
         'jquery.slim.min.js': 'https://code.jquery.com/jquery-%s.slim.min.js' % VERSION,
-    },
-    ('microsoft', 'http'): {
-        'jquery.js': 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.js' % VERSION,
-        'jquery.min.js': 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.min.js' % VERSION,
-        'jquery.slim.js': 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.slim.js' % VERSION,
-        'jquery.slim.min.js': 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.slim.min.js' % VERSION,
     },
     ('microsoft', 'https'): {
         'jquery.js': 'https://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.js' % VERSION,
