@@ -1,11 +1,10 @@
+from setuptools import setup, find_namespace_packages
 from xstatic.pkg import jquery as xs
 
 # The README.txt file should be written in reST so that PyPI can use
-# it to generate your project's PyPI page. 
+# it to generate your project's PyPI page.
 with open('README.txt') as f:
     long_description = f.read()
-
-from setuptools import setup, find_packages
 
 setup(
     name=xs.PACKAGE_NAME,
@@ -19,10 +18,8 @@ setup(
     license=xs.LICENSE,
     url=xs.HOMEPAGE,
     platforms=xs.PLATFORMS,
-    packages=find_packages(),
-    namespace_packages=['xstatic', 'xstatic.pkg', ],
+    packages=find_namespace_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=[],  # nothing! :)
-                          # if you like, you MAY use the 'XStatic' package.
+    install_requires=[],
 )
